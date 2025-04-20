@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Portal Game Terbaik</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #ff5722;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #252525;
+            padding: 15px 0;
+        }
+        
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ff5722;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('game-bg.jpg');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #ff5722;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #e64a19;
+        }
+        
+        .game-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .game-card {
+            background-color: #252525;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .game-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        .game-info {
+            padding: 15px;
+        }
+        
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GameZone</h1>
+        <p>Portal Game Terbaik untuk Gamers Sejati</p>
+    </header>
+    
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#game">Game</a>
+        <a href="#berita">Berita Game</a>
+        <a href="#ulasan">Ulasan</a>
+        <a href="#tentang">Tentang Kami</a>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Game Terbaru 2023</h1>
+            <p>Temukan game-game terbaru dan terpopuler di platform favorit Anda</p>
+            <a href="#game" class="btn">Jelajahi Sekarang</a>
+        </div>
+    </section>
+    
+    <section class="game-section">
+        <h2>Game Populer</h2>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="game1.jpg" alt="Game 1">
+                <div class="game-info">
+                    <h3>Cyber Adventure</h3>
+                    <p>Action RPG | ★★★★☆</p>
+                </div>
+            </div>
+            
+            <div class="game-card">
+                <img src="game2.jpg" alt="Game 2">
+                <div class="game-info">
+                    <h3>Space Warriors</h3>
+                    <p>FPS | ★★★★★</p>
+                </div>
+            </div>
+            
+            <div class="game-card">
+                <img src="game3.jpg" alt="Game 3">
+                <div class="game-info">
+                    <h3>Fantasy Kingdom</h3>
+                    <p>MMORPG | ★★★★☆</p>
+                </div>
+            </div>
+            
+            <div class="game-card">
+                <img src="game4.jpg" alt="Game 4">
+                <div class="game-info">
+                    <h3>Racing Extreme</h3>
+                    <p>Racing | ★★★☆☆</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="game-section" style="background-color: #1e1e1e;">
+        <h2>Berita Terkini</h2>
+        <div class="news-grid">
+            <!-- Isi berita game -->
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 GameZone. Semua hak dilindungi.</p>
+        <div class="social-links">
+            <!-- Link media sosial -->
+        </div>
+    </footer>
+</body>
+</html>
